@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th{
+            padding: 10px;
+        }
+        td{
+            text-align: center;
+            margin: 20px;
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <!-- tr for new row th for column name td for data -->
+    <!-- border property compulsary -->
+    <table border="5" cellspacing="5" style="width:75%; padding: 10px; background-color: cyan; background-color: #009b77; border-spacing: 20px;">
+        <caption> Bibek Rawal</caption>
+    <ul>
+        <!-- colspan !! rowspan jodne -->
+        <tr style="background-color: red;" >
+            <th>S.No</th>
+            <th>Name</th>
+            <th colspan="2">Address</th>    
+        </tr>
+        <tr>
+            <td><li>1</li></td>
+            <td>Bibek</td>
+            <td>Jumla</td>
+            <td>Nepalgunj</td>
+
+
+        </tr>
+        <tr>
+            <td><li>2</li></td>
+            <td>Prabesh</td>
+            <td>Rasuwa</td>
+            <td>KTM</td>
+
+        </tr>
+        <tr>
+            <td><li>3</li></td>
+            <td>Nirjal</td>
+            <td>KTM</td>
+            <td>KTM</td>
+        </tr>
+    </ul>
+    </table>
+    
+    <br>
+    <br>
+    
+    <table border="3" background="jumla.jpg">
+        <tr >
+            <th>S.N</th>
+            <th colspan="2">Name</th>
+        </tr>
+
+        
+        <tr >
+            <th rowspan="2">Name2</th>
+            <th>F.Name</th>
+            <th>L.Name</th>
+        </tr>
+
+        
+        <tr >
+            <th>NE</th>
+            <th>PAL</th>
+        </tr>
+
+        
+        <tr >
+            <th colspan="3"> NEPAL</th>
+        </tr>
+    </table>
+</body>
+</html>
