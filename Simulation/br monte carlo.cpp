@@ -20,7 +20,7 @@ int main()
 		
 		dist = rand_x * rand_x + rand_y * rand_y;
 		
-		if(origin <= 1)
+		if(dist <= 1)
 		{
 			cp++;
 		}
