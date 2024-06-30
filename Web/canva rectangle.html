@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BR Rectangle</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="800" height="800" style="border: 3px solid #0f00ff;"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        
+        // Rectangle
+        ctx.moveTo(0,0);
+        ctx.lineTo(800, 800);
+        ctx.stroke();
+
+    </script>
+</body>
+</html>

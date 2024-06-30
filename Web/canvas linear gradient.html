@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BR Canva LG</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="400" style="border: 3px solid #0f00ff;"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+       
+        var grd = ctx.createLinearGradient(0,0,300,0);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "green");
+
+        ctx.fillStyle = grd;
+        ctx.fillRect(10, 10, 300, 300);
+        ctx.stroke();
+
+    </script>
+    
+</body>
+</html>
