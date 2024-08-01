@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title>Bibek Rawal</title>
+</head>
+<body>
+    <p id="addition"></p>
+    <p id="subtraction"></p>
+    <p id="multiplication"></p>
+    <p id="division"></p>
+    <p id="modulus"></p>
+
+    <p id="and"></p>
+    <p id="or"></p>
+    <p id="not"></p>
+
+    <p id="ternary"></p>
+
+    <script>
+        // Arithmetic operations
+        let a = 5;
+        let b = 2;
+
+        let sum = a + b;
+        let difference = a - b;
+        let product = a * b;
+        let quotient = a / b;
+        let remainder = a % b;
+
+        //logical operation
+        let x = true;
+        let y = false;
+
+        let andResult = x && y; // AND
+        let orResult = x || y;  // OR
+        let notResult = !x;     // NOT
+
+        //ternary operatoion
+
+        (a>0) ? 
+        document.getElementById('ternary').innerText = a
+        :
+        document.getElementById('and').innerText =b;
+        
+
+        // Display results
+        document.getElementById('and').innerText = 'Logical AND (true && false): ' + andResult;
+        document.getElementById('or').innerText = 'Logical OR (true || false): ' + orResult;
+        document.getElementById('not').innerText = 'Logical NOT (!true): ' + notResult;
+   
+
+        // Display results
+        document.getElementById('addition').innerText = 'Addition (5 + 2): ' + sum;
+        document.getElementById('subtraction').innerText = 'Subtraction (5 - 2): ' + difference;
+        document.getElementById('multiplication').innerText = 'Multiplication (5 * 2): ' + product;
+        document.getElementById('division').innerText = 'Division (5 / 2): ' + quotient;
+        document.getElementById('modulus').innerText = 'Modulus (5 % 2): ' + remainder;
+    </script>
+</body>
+</html>

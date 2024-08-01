@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibek Rawal</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5 Form Constraint Validation</h1>
+    <form id="registrationForm" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <span id="nameError" class="error"></span><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <span id="emailError" class="error"></span><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="6" required><br><br>
+        <span id="passwordError" class="error"></span><br>
+        
+        <input type="submit" value="Register">
+    </form>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let form = event.target;
+            let isValid = form.checkValidity();
+            
+            document.getElementById('nameError').innerText = '';
+            document.getElementById('emailError').innerText = '';
+            document.getElementById('passwordError').innerText = '';
+
+            if (!isValid) {
+                if (!form.name.checkValidity()) {
+                    document.getElementById('nameError').innerText = 'Name is required';
+                }
+                if (!form.email.checkValidity()) {
+                    if (form.email.validity.valueMissing) {
+                        document.getElementById('emailError').innerText = 'Email is required';
+                    } else if (form.email.validity.typeMismatch) {
+                        document.getElementById('emailError').innerText = 'Enter a valid email';
+                    }
+                }
+                if (!form.password.checkValidity()) {
+                    if (form.password.validity.valueMissing) {
+                        document.getElementById('passwordError').innerText = 'Password is required';
+                    } else if (form.password.validity.tooShort) {
+                        document.getElementById('passwordError').innerText = 'Password must be at least 6 characters long';
+                    }
+                }
+            } else {
+                alert('Form submitted successfully!');
+                form.submit();
+            }
+        });
+    </script>
+</body>
+</html>

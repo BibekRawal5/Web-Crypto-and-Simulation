@@ -1,0 +1,47 @@
+
+<!-- Date -->
+<!DOCTYPE html>
+<head>
+    <title>Bibek Rawal</title>
+</head>
+<body>
+    <p id="currentDate"></p>
+    <p id="specificDate"></p>
+
+    <script>
+        // Create a Date object for the current date and time
+        const now = new Date();
+        document.getElementById('currentDate').innerText = 'Current Date and Time: ' + now;
+
+        // Create a Date object for a specific date and time
+        const specificDate = new Date('2003-12-30T23:59:59');
+        document.getElementById('specificDate').innerText = 'Specific Date and Time: ' + specificDate;
+    </script>
+</body>
+</html>
+
+<!-- confirmBox -->
+<!DOCTYPE html>
+<head>
+    <title>Bibek Rawal</title>
+</head>
+<body>
+    <button onclick="confirmAction()">Click Me</button>
+    <p id="confirmationResult"></p>
+
+    <script>
+        function confirmAction() {
+            // Display a confirmation dialog
+            const userConfirmed = window.confirm('Do you want to proceed?');
+
+            // Display the result based on user's choice
+            if (userConfirmed) {
+                document.getElementById('confirmationResult').innerText = 'User chose to proceed.';
+            } else {
+                document.getElementById('confirmationResult').innerText = 'User chose to cancel.';
+            }
+        }
+    </script>
+</body>
+</html>
+
