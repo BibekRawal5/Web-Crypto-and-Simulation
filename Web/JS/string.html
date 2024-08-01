@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibek Rawal</title>
+</head>
+<body>
+    <p id="length"></p>
+    <p id="charAt"></p>
+    <p id="includes"></p>
+    <p id="indexOf"></p>
+    <p id="substring"></p>
+    <p id="toUpperCase"></p>
+    <p id="toLowerCase"></p>
+    <p id="trim"></p>
+    <p id="replace"></p>
+    <p id="split"></p>
+
+    <script>
+        // Example string
+        const exampleString = "  Hello, JavaScript!  ";
+
+        // Using string methods
+        const length = exampleString.length;
+        const charAt = exampleString.charAt(7);
+        const includes = exampleString.includes("Java");
+        const indexOf = exampleString.indexOf("Java");
+        const substring = exampleString.substring(2, 7);
+        const toUpperCase = exampleString.toUpperCase();
+        const toLowerCase = exampleString.toLowerCase();
+        const trim = exampleString.trim();
+        const replace = exampleString.replace("JavaScript", "World");
+        const split = exampleString.trim().split(" ");
+
+        // Displaying the results
+        document.getElementById('length').innerText = 'Length: ' + length;
+        document.getElementById('charAt').innerText = 'Character at index 7: ' + charAt;
+        document.getElementById('includes').innerText = 'Includes "Java": ' + includes;
+        document.getElementById('indexOf').innerText = 'Index of "Java": ' + indexOf;
+        document.getElementById('substring').innerText = 'Substring (2, 7): ' + substring;
+        document.getElementById('toUpperCase').innerText = 'To Upper Case: ' + toUpperCase;
+        document.getElementById('toLowerCase').innerText = 'To Lower Case: ' + toLowerCase;
+        document.getElementById('trim').innerText = 'Trim: ' + trim;
+        document.getElementById('replace').innerText = 'Replace "JavaScript" with "World": ' + replace;
+        document.getElementById('split').innerText = 'Split into array: ' + JSON.stringify(split);
+    </script>
+</body>
+</html>
