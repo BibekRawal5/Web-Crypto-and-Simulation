@@ -1,0 +1,31 @@
+<!-- document.write() -->
+<!DOCTYPE html>
+<head>
+
+    <title>Bibek Rawal</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>Hello, World!</h1>");
+    </script>
+
+
+
+    <script>
+        console.log("This is a message in the console.");
+    </script>
+
+    <div id="content">Original Content</div>
+    <button onclick="changeContent()">Change Content</button>
+
+    <script>
+        function changeContent() {
+            document.getElementById('content').innerHTML = '<h1>New Content!</h1>';
+        }
+    </script>
+
+    <script>
+        window.alert("This is an alert message!");
+    </script>
+</body>
+</html>

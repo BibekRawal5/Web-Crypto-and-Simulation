@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BR Loops</title>
+</head>
+<body>
+    <h1>Conditional Loops in JavaScript</h1>
+
+    <h2>For Loop with Conditional Statements</h2>
+    <p id="forLoop"></p>
+
+    <h2>While Loop with Conditional Statements</h2>
+    <p id="whileLoop"></p>
+
+    <h2>Do...While Loop with Conditional Statements</h2>
+    <p id="doWhileLoop"></p>
+
+    <script>
+        // For loop with conditional statements
+        let forResult = '';
+        for (let i = 1; i <= 4; i++) {
+            if (i % 2 === 0) {
+                forResult += i + ' is even<br>';
+            } else {
+                forResult += i + ' is odd<br>';
+            }
+        }
+        document.getElementById('forLoop').innerHTML = forResult;
+
+        // While loop with conditional statements
+        let whileResult = '';
+        let count1 = 1;
+        while (count1 <= 4) {
+            if (count1 % 3 === 0) {
+                whileResult += count1 + ' is divisible by 3<br>';
+            } else if (count1 % 2 === 0) {
+                whileResult += count1 + ' is divisible by 2<br>';
+            } else {
+                whileResult += count1 + ' is not divisible by 2 or 3<br>';
+            }
+            count1++;
+        }
+        document.getElementById('whileLoop').innerHTML = whileResult;
+
+        // Do...while loop with conditional statements
+        let doWhileResult = '';
+        let count2 = 1;
+        do {
+            if (count2 % 5 === 0) {
+                doWhileResult += count2 + ' is divisible by 5<br>';
+            } else {
+                doWhileResult += count2 + ' is not divisible by 5<br>';
+            }
+            count2++;
+        } while (count2 <= 4);
+        document.getElementById('doWhileLoop').innerHTML = doWhileResult;
+    </script>
+</body>
+</html>
