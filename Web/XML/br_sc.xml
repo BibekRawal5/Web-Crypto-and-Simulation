@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!DOCTYPE books SYSTEM "br_not.dtd">
+<books>
+<book>
+<title name="C"></title>
+<isbn number="2309"></isbn>
+<zipcode zname="23244345345"></zipcode>
+<publish year="1995"></publish>
+</book>
+<book>
+<title name="C++"></title>
+<isbn number="2310"></isbn>
+<zipcode zname="23244345345"></zipcode>
+<publish year="1995"></publish>
+</book>
+</books>

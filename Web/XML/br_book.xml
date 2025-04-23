@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!DOCTYPE books [
+<!ELEMENT books (book)*>
+<!ELEMENT book (title?,isbn+,(zipcode|author),publish*)>
+<!ELEMENT title (#PCDATA)> <!ELEMENT isbn (#PCDATA)>
+<!ELEMENT zipcode (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT publish (#PCDATA)>
+<!ATTLIST zipcode zname CDATA "232232323">
+<!ATTLIST publish year CDATA #FIXED "1995">
+<!ATTLIST title name CDATA #IMPLIED>
+<!ATTLIST isbn number CDATA #REQUIRED>
+]>
+<books>
+<book>
+<title name="C"></title>
+<isbn number="2309"></isbn>
+<zipcode zname="23244345345"></zipcode>
+<publish year="1998"></publish>
+</book>
+<book>
+<title name="C++"></title>
+<isbn number="2310"></isbn>
+<zipcode zname="45814845585"></zipcode>
+<publish year="1995"></publish>
+</book>
+<book>
+<title name="JAVA"></title>
+<isbn number="2311"></isbn>
+<zipcode zname="553378845585"></zipcode>
+<publish year="1995"></publish>
+</book>
+<book>
+<title name="PUZZLES"></title>
+<isbn number="2313"></isbn>
+<zipcode zname="456644445"></zipcode>
+<publish year="1995"></publish>
+</book>
+<book>
+<title name="XML"></title>
+<isbn number="2312"></isbn>
+<zipcode zname="412684895585"></zipcode>
+<publish year="1995"></publish>
+</book>
+</books>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<bookdb>
+<book>
+<name>Java Complete Reference</name>
+<author>lan</author>
+<year>2001</year>
+<publication>Tata McDraw Hill</publication>
+</book>
+<book>
+<name>C# Complete Reference</name>
+<author>balagurusamy</author>
+<year>2006</year>
+<publication>Persion Addition</publication>
+</book>
+<book>
+<name>Complete Reference</name>
+<author>Kanithkar</author>
+<year>2005</year>
+<publication>Tata McDraw Hill</publication>
+</book>
+</bookdb>

@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>BR BC</title>
+<script language="javascript">
+var root;
+var xmldoc= new ActiveXObject("Microsoft.XMLDOM");
+xmldoc.load("BR_Bookcollection.xml");
+function start()
+{
+if(xmldoc.readyState=="4") 
+    loading();
+else
+alert("could not load");
+}
+function loading()
+{
+var i; root=xmldoc.documentElement; var count; count=root.childNodes.length; for(i=0;i<count;i++)
+{
+document.write(root.childNodes.item(i).text+"<br>");
+}
+}
+</script>
+</head>
+<body onLoad="start()">
+</body>
+</html>

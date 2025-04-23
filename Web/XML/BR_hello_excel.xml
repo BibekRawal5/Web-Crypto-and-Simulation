@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<student-data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<record>
+		<Name>Bibek</Name>
+		<Age>20</Age>
+		<Major>CS</Major>
+		<GPA>3.65</GPA>
+	</record>
+	<record>
+		<Name>Anish</Name>
+		<Age>21</Age>
+		<Major>Physics</Major>
+		<GPA>3.2</GPA>
+	</record>
+	<record>
+		<Name>Prabesh</Name>
+		<Age>21</Age>
+		<Major>CS</Major>
+		<GPA>3.6</GPA>
+	</record>
+</student-data>

@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
+<addressbook>
+<emp1>
+<name>Bibek</name>
+<doorno>B- 523</doorno>
+<street>Kamerotar</street>
+<area>Madhyapur Thimi</area>
+<city>Bhaktapur</city>
+<state>Bagmati</state>
+<country>Nepal</country>
+<phoneno>9864851923</phoneno>
+</emp1>
+<emp2>
+<name>Dipen</name>
+<doorno>B- 525</doorno>
+<street>Suryabinayak</street>
+<area>Suryabinayak</area>
+<city>Bhaktapur</city>
+<state>Bagmati</state>
+<country>Nepal</country>
+<phoneno>9848215926</phoneno>
+</emp2>
+<emp3>
+<name>Sunil</name>
+<doorno>K- 213</doorno>
+<street>CC</street>
+<area>Sinamangal</area>
+<city>Kathmandu</city>
+<state>Bagmati</state>
+<country>Nepal</country>
+<phoneno>9848251649</phoneno>
+</emp3>
+</addressbook>
